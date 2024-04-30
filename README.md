@@ -1,8 +1,6 @@
 - 👋 Hi, I’m @cozymol
 - 👀 I’m interested in Homelab and Linux, Server, Docker.. 
 - 🌱 I’m currently learning all of that stuff :P
-- 📫 How to reach me ... pls dont do so ? 
-- 😄 Pronouns: ... Big PP
 
 ⚡⚡⚡ 
 The heart of my current homelab setup revolves around my TrueNAS Scale server. It hosts a variety of Docker containers, providing entertainment for both myself and my family through our Plex media library.
