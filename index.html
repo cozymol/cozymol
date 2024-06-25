@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .section {
+            width: 90%;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .header h1 {
+            margin: 10px 0 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #b0b0b0;
+        }
+        .header .category-title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .divider {
+            position: absolute;
+            left: 50%; /* Horizontally center */
+            top: 20px; /* Distance from top */
+            height: 100vh; /* Height of the line minus margins */
+            width: 2px; /* Width of the line */
+            background-color: #ffffff;
+            transform: translateX(-50%); /* Correct horizontal centering */
+        }
+        .box {
+            background-color: #3a3a3a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        .job, .education, .private-info {
+            margin-bottom: 20px;
+        }
+        .job h3, .education h3, .private-info h3 {
+            font-size: 1.4em;
+            margin: 0;
+            color: #ffffff;
+            text-align: center;
+        }
+        .job p, .education p, .private-info p {
+            margin: 5px 0;
+            color: #b0b0b0;
+            text-align: center;
+        }
+        .homelab {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .homelab-box {
+            background-color: #535353;
+            padding: 20px;
+            border-radius: 50px;
+            width: calc(47% - 20px);
+            text-align: center;
+	    margin-bottom: 20px;
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section {
+                width: 100%;
+                padding: 0;
+            }
+            .divider {
+                display: none;
+            }
+            .homelab {
+                flex-direction: column;
+            }
+            .homelab-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .header .category-title {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="header">
+                <p class="category-title">BUSINESS</p>
+                <img src="data/business.jpg" alt="Profile Picture">
+                <h1>Christopher Mätzel</h1>
+                <p>Certified Specialist | Financial Advisor | Trainer | Life Insurance</p>
+            </div>
+            <div class="box">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>Clerk & Trainer in Life Insurance</h3>
+                    <p>Debeka Life Insurance a.G. since 01.01.2023 - present</p>
+                </div>
+                <div class="job">
+                    <h3>Businessman Insurance and Finance</h3>
+                    <p>Continentale Landesdirektion 3V Finanz Management GmbH since 17.06.2021 – 31.12.2022</p>
+                </div>
+                <div class="job">
+                    <h3>Apprentice Insurance and Finance Clerk</h3>
+                    <p>Continentale Landesdirektion 3V Finanz Management GmbH since 08.2018 - 17.06.2021</p>
+                </div>
+                <div class="job">
+                    <h3>Data Management Assistant</h3>
+                    <p>Fischer Surface Technologies GmbH and Co. KG 2018-2019</p>
+                </div>
+                <div class="job">
+                    <h3>Building Cleaning</h3>
+                    <p>Ulbrich Building Cleaning 2017-2018</p>
+                </div>
+                <div class="job">
+                    <h3>Cashier</h3>
+                    <p>Rewe Center Diez 2016 – 2017</p>
+                </div>
+                <div class="job">
+                    <h3>Production Worker (Summer Job)</h3>
+                    <p>Fischer Surface Technologies GmbH and Co. KG Summer 2015</p>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Education</h2>
+                <div class="education">
+                    <h3>Certified Specialist for Insurance and Finance</h3>
+                    <p>BWV Koblenz 17.09.2022 – present</p>
+                </div>
+                <div class="education">
+                    <h3>Insurance and Finance Clerk</h3>
+                    <p>Vocational School of Economics Koblenz 2018-17.06.2021</p>
+                </div>
+                <div class="education">
+                    <h3>General University Entrance Qualification</h3>
+                    <p>Nicolaus-August-Otto School Diez 2014 – 2018</p>
+                </div>
+                <div class="education">
+                    <h3>Secondary School Certificate</h3>
+                    <p>Realschule Plus Katzenelnbogen 2013 – 2014</p>
+                </div>
+                <div class="education">
+                    <h3>Sophie-Hedwig-Gymnasium</h3>
+                    <p>2008 – 2013</p>
+                </div>
+                <div class="education">
+                    <h3>Elementary School in Einrich Katzenelnbogen</h3>
+                    <p>2004 – 2008</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <div class="header">
+                <p class="category-title">PRIVATE</p>
+                <img src="data/private.png" alt="Profile Picture">
+                <h1>Cozymol</h1>
+                <p>Homelab Enthusiast</p>
+            </div>
+            <div class="box">
+                <h2>Private</h2>
+                <div class="private-info">
+                    <h3>Motivation</h3>
+                    <p>My passion for computers began at a very young age. It all started with my father, as we upgraded old computers together, sometimes even soldering CPU modules to squeeze out every last MHz of performance. Initially, my first computer was mainly for gaming and schoolwork. However, it didn't take long for me to realize that these machines had far more potential than just running basic applications. My motivation was always to see what was possible and push those boundaries to the limit.</p>
+                    <p>During the pandemic, with ample free time and a growing need for a variety of series and movies, I realized that subscribing to multiple streaming services was neither practical nor economical. This realization motivated me to find an alternative solution.</p>
+                </div>
+                <div class="private-info">
+                    <h3>Implementation</h3>
+                    <p>My homelab project started with a TrueNAS server equipped with 32TB of storage, providing enough space to create my own streaming platform. What I didn't anticipate was the rich experience it would offer. Buying a pre-built NAS wasn't appealing to me; I prefer the uniqueness and control that come with building something myself. I enjoy the process of researching components, finding good deals, and assembling them into a cohesive system. It's not just a hobby—it's a rewarding blend of creativity and practicality, where every new discovery and setup brings a sense of accomplishment.</p>
+                    <p>Currently, my homelab includes not only the TrueNAS server but also a 24/7 Proxmox server and a Raspberry Pi for simpler tasks. Additionally, I transitioned from a classic Speedport/Fritzbox setup to the Unifi ecosystem, allowing me to manage my own DNS and enhance my network security.</p>
+                </div>
+                <div class="private-info">
+                    <h3>Experience</h3>
+                    <p>My journey with TrueNAS, Proxmox, and Linux Server has significantly expanded my technical skills and problem-solving abilities. Each component has played a crucial role in enhancing my understanding of networking, virtualization, and system administration.</p>
+		    <p>Starting with the TrueNAS server, I ventured into building my own streaming platform. This not only provided practical solutions to storage challenges but also deepened my knowledge of data management and backup strategies.</p>
+		    <p>The Proxmox server introduced me to the world of virtualization, where I learned to create and manage virtual environments efficiently. This experience sharpened my ability to optimize system performance and resource allocation.</p>
+		    <p>With Raspberry Pi, I explored projects from home automation to media centers, diving into embedded systems and DIY electronics. Each project required meticulous planning, precise execution, and troubleshooting, further honing my attention to detail and perseverance.</p>
+		    <p>Throughout this journey, I remained deeply focused on mastering each technology stack, driven by a passion for innovation and continuous learning. From initial experimentation to sophisticated network management, every step has deepened my understanding and appreciation for technology, equipping me with the skills to tackle complex challenges and drive impactful solutions in any professional setting.</p>
+                </div>
+                <div class="homelab">
+                    <div class="homelab-box">
+                        <h2>TrueNAS Server</h2>
+                        <p>Intel Core i3-12100</p>
+			<p>MSI MAG B660M MORTAR</p>
+			<p>32GB DDR4-3200 RAM</p>
+			<p>32TB HDD Toshiba Storage</p>
+			<p>2TB SSD Samsung Storage</p>
+			<p>Seasonic Power Supply 650W Gold Modular</p>
+                    </div>
+                    <div class="homelab-box">
+                        <h2>Proxmox Server N100/1TB/16GB DDR5</h2>
+                        <p>CasaOS</p>
+			
+			<p>Docker</p>
+			<p>macOS Catalina</p>
+			<p>Nginx Proxy Manager</p>
+			<p>AdGuard main</p>
+                    </div>
+                </div>
+                <div class="homelab-box">
+                    <h2>Raspberry Pi Zero 2 W</h2>
+                   	<p>Linux Server</p>
+			<p>Docker</p>
+			<p>AdGuard backup</p>
+			<p>Wireguard backup</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
