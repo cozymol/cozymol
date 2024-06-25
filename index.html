@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>CM Business and Private</title>
+    <link rel="icon" type="image/svg+xml" href="data/fav.svg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
@@ -55,7 +56,7 @@
         }
         .box {
             background-color: #3a3a3a;
-            padding: 10px;
+            padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
             text-align: center;
@@ -63,7 +64,7 @@
         .section h2 {
             font-size: 1.8em;
             border-bottom: 2px solid #555;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
             margin-bottom: 20px;
             color: #ffffff;
             text-align: center;
@@ -84,7 +85,6 @@
         }
         .homelab {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
             margin-top: 20px;
         }
@@ -92,9 +92,9 @@
             background-color: #535353;
             padding: 20px;
             border-radius: 50px;
-            width: 100% -10px;
+            width: calc(47% - 20px);
             text-align: center;
-            margin-bottom: 20px;
+	    margin-bottom: 20px;
         }
         @media (max-width: 800px) {
             .container {
@@ -107,6 +107,9 @@
             }
             .divider {
                 display: none;
+            }
+            .homelab {
+                flex-direction: column;
             }
             .homelab-box {
                 width: 100%;
@@ -207,7 +210,7 @@
                 <div class="private-info">
                     <h3>Motivation</h3>
                     <p>My passion for computers began at a very young age. It all started with my father, as we upgraded old computers together, sometimes even soldering CPU modules to squeeze out every last MHz of performance. Initially, my first computer was mainly for gaming and schoolwork. However, it didn't take long for me to realize that these machines had far more potential than just running basic applications. My motivation was always to see what was possible and push those boundaries to the limit.</p>
-                    <p>During the pandemic, with ample free time and a growing need for a variety of series and movies, I realized that subscribing to multiple streaming services was neither practical nor economical. This realization motivated me to find an alternative solution.</p>
+                    <p>During the pandemic, with ample free time and a growing need for a variety of series and movies, I realized that subscribing to multiple streaming services was neither practical nor economical. This realization motivated me to find an alternative solution. Thus, I began piecing together my own media library, aiming for independence and flexibility.</p>
                 </div>
                 <div class="private-info">
                     <h3>Implementation</h3>
@@ -217,36 +220,37 @@
                 <div class="private-info">
                     <h3>Experience</h3>
                     <p>My journey with TrueNAS, Proxmox, and Linux Server has significantly expanded my technical skills and problem-solving abilities. Each component has played a crucial role in enhancing my understanding of networking, virtualization, and system administration.</p>
-                    <p>Starting with the TrueNAS server, I ventured into building my own streaming platform. This not only provided practical solutions to storage challenges but also deepened my knowledge of data management and backup strategies.</p>
-                    <p>The Proxmox server introduced me to the world of virtualization, where I learned to create and manage virtual environments efficiently. This experience sharpened my ability to optimize system performance and resource allocation.</p>
-                    <p>With Raspberry Pi, I explored projects from home automation to media centers, diving into embedded systems and DIY electronics. Each project required meticulous planning, precise execution, and troubleshooting, further honing my attention to detail and perseverance.</p>
-                    <p>Throughout this journey, I remained deeply focused on mastering each technology stack, driven by a passion for innovation and continuous learning. From initial experimentation to sophisticated network management, every step has deepened my understanding and appreciation for technology, equipping me with the skills to tackle complex challenges and drive impactful solutions in any professional setting.</p>
+		    <p>Starting with the TrueNAS server, I ventured into building my own streaming platform. This not only provided practical solutions to storage challenges but also deepened my knowledge of data management and backup strategies.</p>
+		    <p>The Proxmox server introduced me to the world of virtualization, where I learned to create and manage virtual environments efficiently. This experience sharpened my ability to optimize system performance and resource allocation.</p>
+		    <p>With Raspberry Pi, I explored projects from home automation to media centers, diving into embedded systems and DIY electronics. Each project required meticulous planning, precise execution, and troubleshooting, further honing my attention to detail and perseverance.</p>
+		    <p>Throughout this journey, I remained deeply focused on mastering each technology stack, driven by a passion for innovation and continuous learning. From initial experimentation to sophisticated network management, every step has deepened my understanding and appreciation for technology, equipping me with the skills to tackle complex challenges and drive impactful solutions in any professional setting.</p>
                 </div>
                 <div class="homelab">
                     <div class="homelab-box">
                         <h2>TrueNAS Server</h2>
                         <p>Intel Core i3-12100</p>
-                        <p>MSI MAG B660M MORTAR</p>
-                        <p>32GB DDR4-3200 RAM</p>
-                        <p>32TB HDD Toshiba Storage</p>
-                        <p>2TB SSD Samsung Storage</p>
-                        <p>Seasonic Power Supply 650W Gold Modular</p>
+			<p>MSI MAG B660M MORTAR</p>
+			<p>32GB DDR4-3200 RAM</p>
+			<p>32TB HDD Toshiba Storage</p>
+			<p>2TB SSD Samsung Storage</p>
+			<p>Seasonic Power Supply 650W Gold Modular</p>
                     </div>
                     <div class="homelab-box">
                         <h2>Proxmox Server N100/1TB/16GB DDR5</h2>
                         <p>CasaOS</p>
-                        <p>Docker</p>
-                        <p>macOS Catalina</p>
-                        <p>Nginx Proxy Manager</p>
-                        <p>AdGuard main</p>
+			
+			<p>Docker</p>
+			<p>macOS Catalina</p>
+			<p>Nginx Proxy Manager</p>
+			<p>AdGuard main</p>
                     </div>
-                    <div class="homelab-box">
-                        <h2>Raspberry Pi Zero 2 W</h2>
-                        <p>Linux Server</p>
-                        <p>Docker</p>
-                        <p>AdGuard backup</p>
-                        <p>Wireguard backup</p>
-                    </div>
+                </div>
+                <div class="homelab-box">
+                    <h2>Raspberry Pi Zero 2 W</h2>
+                   	<p>Linux Server</p>
+			<p>Docker</p>
+			<p>AdGuard backup</p>
+			<p>Wireguard backup</p>
                 </div>
             </div>
         </div>
